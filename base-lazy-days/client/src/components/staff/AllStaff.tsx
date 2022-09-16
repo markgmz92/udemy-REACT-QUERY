@@ -1,9 +1,10 @@
-import { Box, Heading, HStack, Radio, RadioGroup } from '@chakra-ui/react';
-import { ReactElement } from 'react';
+/* eslint-disable simple-import-sort/imports */
+import { Box, HStack, Heading, Radio, RadioGroup } from '@chakra-ui/react';
 
-import { useTreatments } from '../treatments/hooks/useTreatments';
-import { useStaff } from './hooks/useStaff';
+import { ReactElement } from 'react';
 import { Staff } from './Staff';
+import { useStaff } from './hooks/useStaff';
+import { useTreatments } from '../treatments/hooks/useTreatments';
 
 export function AllStaff(): ReactElement {
   // replace with data from React Query
@@ -12,7 +13,7 @@ export function AllStaff(): ReactElement {
 
   return (
     <Box>
-      <Heading mt={10} align="center">
+      <Heading mt={10} textAlign="center">
         Our Staff
       </Heading>
       <HStack m={10} spacing={8} justify="center">

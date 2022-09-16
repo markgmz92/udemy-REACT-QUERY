@@ -1,3 +1,4 @@
+/* eslint-disable simple-import-sort/imports */
 import {
   Box,
   Center,
@@ -9,12 +10,12 @@ import {
   Text,
   Tr,
 } from '@chakra-ui/react';
-import dayjs from 'dayjs';
-import { ReactElement } from 'react';
-import { ImCancelCircle } from 'react-icons/im';
-import { Link, Redirect } from 'react-router-dom';
 
 import type { Appointment } from '../../../../shared/types';
+import { ImCancelCircle } from 'react-icons/im';
+import { Link } from 'react-router-dom';
+import { ReactElement } from 'react';
+import dayjs from 'dayjs';
 import { useCancelAppointment } from '../appointments/hooks/useCancelAppointment';
 import { useUser } from './hooks/useUser';
 import { useUserAppointments } from './hooks/useUserAppointments';
@@ -69,7 +70,7 @@ export function UserAppointments(): ReactElement | null {
 
   return (
     <Box>
-      <Heading mt={10} align="center">
+      <Heading mt={10} textAlign="center">
         Your Appointments
       </Heading>
       <Center>
